@@ -2,10 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
-.container{
+    html{
+    height: 100%;
+    }
+
+   .container{
 	margin: 0 auto;
 	width: 1063px;
-    height: 950px;
+    min-height: 100%;
 	padding: 50px 45px 0px;
 	background: #ffffff;
 	border-left: 1px solid #dbdbdb;
@@ -13,6 +17,7 @@
 }
 
 body{
+	height: 100%;
 	font-family: Calibri;
 	width: 1367px;
     background: #f9f9f9;
@@ -22,13 +27,14 @@ body{
 	height: 80px;
 }
 .top_menu li {
+	border: 1px solid rgba(0, 0, 0, 0);
 	font-size: 18px;
 	line-height: 40px;
-	text-align: center;
+	text-align: center; 
 	display:inline-block;
 	margin: 0;
 	padding: 0;
-	background: #535353;
+	background: linear-gradient(to top, #454444, #5c5c5c);
 }
 .top_menu a{
 	color: white;
@@ -39,12 +45,12 @@ body{
 	width: 1065px;
 	font-size:0;
 	letter-spacing:-1px;
-	background: #535353;
+	background: linear-gradient(to top, #454444, #5c5c5c);
 	line-height: 0px;
  }
 
  .top_menu li:hover{
-	background: #373737;
+	background: linear-gradient(to top, #2e2e2e, #4a4a4a);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
 }	
@@ -66,9 +72,14 @@ body{
     line-height: 40px;
     color: #656363;
     text-decoration: none;
-    border: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
     display: block;
     height: 39px;
+}
+.left_menu li:first-child{
+	border-top: 1px solid #c8c8c8;
 }
 .image{
 
